@@ -1,0 +1,52 @@
+.PageTop{
+    position: relative;
+    background-color: midnightblue;
+    color: white;
+    font-family: 'Nunito', monospace;
+    flex-direction: row;
+    width:  100%;
+    height: 80px;
+    font-size: 22px;
+    justify-content: space-between;
+    align-items: center;
+}
+.Title{
+    position: relative;
+    display: flex;
+    left:5%;
+    top: 43%;
+}
+.button-Group{
+    display: flex;
+    position: relative;
+    border: none;
+    color:  white;
+    padding:  6px 10px;
+    text-align: center;
+    right: 7%;
+    bottom: 43%;
+}
+.btn1{
+    padding: 5px 15px ;
+    background-color: midnightblue;
+    color: white;
+    border:  none;
+
+}
+.btn2{
+    padding: 5px 15px;
+    background-color: midnightblue;
+    color: white;
+    border:  none;
+}
+.text{
+    width: 50%;
+    font-size: 20px ;
+    position: relative;
+    left: 50px;
+    flex-wrap: wrap;
+    font-family: 'Nunito', monospace;
+}
+.image{
+    width: 100px;
+}
