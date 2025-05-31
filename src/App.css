@@ -1,5 +1,9 @@
-.PageTop{
+.background{
     background-color: #0a192f;
+    min-height: 100vh;
+}
+.PageTop{
+
     color: white;
     font-family: 'Nunito', monospace;
     height: 80px;
@@ -41,36 +45,52 @@
     font-family: 'Nunito', monospace;
 }
 .body{
-    background-color:#0a192f;
     color: white;
     font-family: 'Nunito', monospace;
-    min-height: 100vh;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
-
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-width: 100%;
+    margin-top: 100px;
+    text-align: left;
 
 }
 .image{
-    width: 250px;
+    width: 350px;
     max-width: 100%;
-    height: 25%;
+    height: auto;
     border-radius: 50%;
     align-self: center;
-}
+    flex-shrink: 1;
+    margin-right: 10px;
+    margin-left: 10px;
 
-.Header_Txt{
-    font-weight: bold;
-    align-self: flex-start;
-
-}
-.text{
-    align-self: flex-start;
 }
 .opening_text{
     display: flex;
-    flex-direction: column;
-    position: relative;
-    align-self: center;
-    left: 100px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 40%;
+    margin-bottom: 60px;
+    flex-shrink: 1;
+    align-items: flex-start;
+    text-align: left;
+}
+.Header_Txt{
+    font-weight: bold;
+    align-self: flex-start;
+    font-size: 70px;
+    text-align: left;
+}
+.text{
+    align-self: flex-start;
+    text-align: left;
+    font-size: 30px;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
 
 }
