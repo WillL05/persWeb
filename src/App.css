@@ -1,5 +1,5 @@
 .PageTop{
-    background-color:#3D52A0;
+    background-color: #0a192f;
     color: white;
     font-family: 'Nunito', monospace;
     height: 80px;
@@ -9,7 +9,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    border-bottom: 2px solid black;
+
 }
 .Title{
     margin-left: 20px ;
@@ -40,33 +40,37 @@
     left: 25px;
     font-family: 'Nunito', monospace;
 }
+.body{
+    background-color:#0a192f;
+    color: white;
+    font-family: 'Nunito', monospace;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+
+
+}
 .image{
     width: 250px;
     max-width: 100%;
-    position: relative;
-    left: 60%;
     height: 25%;
-    margin-top: 20%;
     border-radius: 50%;
+    align-self: center;
+}
+
+.Header_Txt{
+    font-weight: bold;
+    align-self: flex-start;
 
 }
-.body{
-    background-color:#7091E6;
-    color: white;
-    font-family: 'Nunito', monospace;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height: 100vh;
-}
-.Header_Txt{
-    position: relative;
-    right: 5%;
-    top: 20%;
-}
 .text{
+    align-self: flex-start;
+}
+.opening_text{
+    display: flex;
+    flex-direction: column;
     position: relative;
-    right: 50%;
-    top: 30%;
+    align-self: center;
+    left: 100px;
+
 }

@@ -14,11 +14,13 @@ export default function Home() {
                 </div>
             </header>
             <div className = "body">
-                <img className = "image" src='src/assets/Will.webp' alt = "Will"/>
-                <h1 className="Header_Txt">Hi I'm Will</h1>
-                <div className="text">
-                    <p>I'm a computer science student at the University of Leeds with an interest in software engineering</p>
+                <div className="opening_text">
+                    <h1 className="Header_Txt">Hi! I'm Will</h1>
+                    <div className="text">
+                        <p>I'm a computer science student at the University of Leeds with an interest in software engineering</p>
+                    </div>
                 </div>
+                <img className = "image" src='src/assets/Will.webp' alt = "Will"/>
             </div>
 
 
