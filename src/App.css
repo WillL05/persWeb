@@ -1,9 +1,9 @@
 .background{
     background-color: #0a192f;
     min-height: 100vh;
+    font-family: 'Nunito', monospace;
 }
 .PageTop{
-
     color: white;
     font-family: 'Nunito', monospace;
     height: 80px;
@@ -13,7 +13,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-
 }
 .Title{
     margin-left: 20px ;
@@ -37,25 +36,49 @@
     color: white;
     border:  none;
 }
-.text{
-    width: 50%;
-    font-size: 20px ;
-    position: relative;
-    left: 25px;
-    font-family: 'Nunito', monospace;
-}
 .body{
-    color: white;
-    font-family: 'Nunito', monospace;
+    margin: 170px auto 0 auto;
+    color: whitesmoke;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     justify-content: center;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    max-width: 100%;
-    margin-top: 100px;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 75%;
+}
+
+.opening_text{
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-self: center;
     text-align: left;
+
+
+}
+.Header_Txt{
+    font-weight: bold;
+    font-size: 70px;
+    text-align: left;
+    flex-shrink: 2;
+}
+.sub_text{
+    text-align: left;
+    font-size: 25px;
+    width: 75%;
+}
+.grid{
+    width: 75%;
+    display: grid;
+    align-items: center;
+    align-self: center;
+    margin-top: 75px;
+
+}
+.grid_left
+{
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 3;
 
 }
 .image{
@@ -64,33 +87,8 @@
     height: auto;
     border-radius: 50%;
     align-self: center;
-    flex-shrink: 1;
     margin-right: 10px;
-    margin-left: 10px;
-
-}
-.opening_text{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 40%;
-    margin-bottom: 60px;
-    flex-shrink: 1;
-    align-items: flex-start;
-    text-align: left;
-}
-.Header_Txt{
-    font-weight: bold;
-    align-self: flex-start;
-    font-size: 70px;
-    text-align: left;
-}
-.text{
-    align-self: flex-start;
-    text-align: left;
-    font-size: 30px;
-    width: auto;
-    margin-left: 0;
-    margin-right: 0;
-
+    margin-left: 50px;
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 3;
 }
