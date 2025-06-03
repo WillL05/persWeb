@@ -12,8 +12,9 @@ export default function Home() {
                 </div>
 
                 <div className= "button-Group">
-                    <button className = "btn1" type={"button"}>About</button>
-                    <button className = "btn2" type={"button"}>Contact</button>
+
+                    <a href={"#about"} className = "btn1" type={"button"}>0.1 About</a>
+                    <a href={"#contact"} className = "btn2" type={"button"}>0.2 Contact</a>
                 </div>
             </header>
             <div className = "body">
@@ -24,6 +25,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="about">
+                    <h2 id="about">01. About</h2>
                     <div className= "grid">
                         <div className="grid_left">
                             <p>Hi I'm Will, a student at the University of Leeds and studying Computer Science.</p>
