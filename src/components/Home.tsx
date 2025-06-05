@@ -1,9 +1,9 @@
 import '../App.css'
 
-//import {useState} from "react";
+import {useState} from "react";
 
 export default function Home() {
-    //const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(false);
 
     return(<>
             <div className="background">
@@ -42,20 +42,19 @@ export default function Home() {
                     <h2>02. Projects</h2>
                     <div className= "project_grid">
                         <ul className= "project_list">
-
-
                             <li>
-                                <button type="button" className="unity_button">A-Level Unity game</button>
-                                <div className="A-Level">
-
+                                <button type="button" className="unity_button" onClick={() => setOpen(!open)}> A-Level Unity game,</button>
+                                <div className={`collapsable ${open ? "open" : ""}`}>
+                                       <p>test </p>
                                 </div>
                             </li>
                             <li>
                                 Weather Website
                             </li>
                             <li>
-                                This Website!
+                                This Website
                             </li>
+
                         </ul>
                     </div>
                 </div>

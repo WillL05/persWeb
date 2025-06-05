@@ -82,7 +82,7 @@
 }
 @media (min-width: 768px) {
     .grid{
-        width: 75%;
+        width: 100%;
         display: grid;
         align-items: center;
         align-self: center;
@@ -98,8 +98,8 @@
 }
 .grid_left
 {
-    grid-column: 0 / span 1;
-    grid-row: 0/ span 4;
+    grid-column: 1 / span 1;
+    grid-row: 0/ span 2;
     margin-right: 10px;
     align-self: center;
 }
@@ -109,8 +109,8 @@
     height: auto;
     border-radius: 50%;
     align-self: center;
-    grid-column: 2 / span 1;
-    grid-row: 0 / span 3;
+    grid-column: 4 / span 1;
+    grid-row: 0 / span 1;
 }
 .h2{
     font-size: 35px;
@@ -145,4 +145,17 @@ li::before{
 .active, .unity_button:hover{
     background-color: #0a194f;
     color: white;
+}
+.collapsable {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+
+    background-color: #f1f1f1;
+}
+
+.collapsable.open {
+    max-height: 50px; /* increase to safely fit content */
+
 }
