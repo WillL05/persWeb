@@ -14,7 +14,8 @@ export default function Home() {
                 <div className= "button-Group">
 
                     <a href={"#about"} className = "btn1" type={"button"}>0.1 About</a>
-                    <a href={"#contact"} className = "btn2" type={"button"}>0.2 Contact</a>
+                    <a href={"#projects"} className = "btn2" type={"button"}>0.2 Projects</a>
+                    <a href={"#contact"} className = "btn3" type={"button"}>0.3 Contact</a>
                 </div>
             </header>
             <div className = "body">
@@ -24,8 +25,8 @@ export default function Home() {
                         <p>I'm a computer science student at the University of Leeds with an interest in software engineering</p>
                     </div>
                 </div>
-                <div className="about">
-                    <h2 id="about">01. About</h2>
+                <div id="about" className="about">
+                    <h2>01. About</h2>
                     <div className= "grid">
                         <div className="grid_left">
                             <p>Hi I'm Will, a student at the University of Leeds and studying Computer Science.</p>
@@ -34,6 +35,12 @@ export default function Home() {
                             <p>I'm most confident working in Python, but I also have experience with C and C#</p>
                         </div>
                         <img className = "image" src='src/assets/Will.webp' alt = "Will"/>
+                    </div>
+                </div>
+                <div id="projects">
+                    <h2>02. Projects</h2>
+                    <div className= "project_grid">
+                        <ul>A-Level unity game </ul>
                     </div>
                 </div>
             </div>

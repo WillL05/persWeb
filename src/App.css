@@ -23,19 +23,24 @@
     color:  white;
     justify-content: flex-end;
     margin-right: 20px;
+    text-decoration:  none;
 }
 .btn1{
-
     color: white;
     border:  none;
     margin-right: 20px;
     text-decoration:  none;
 }
 .btn2{
-
-
     color: white;
     border:  none;
+    text-decoration:  none;
+    margin-right: 20px;
+}
+.btn3{
+    color: white;
+    border:  none;
+    margin-right: 20px;
     text-decoration:  none;
 }
 .body{
@@ -56,6 +61,7 @@
     align-self: center;
     text-align: left;
     margin-top: 70px;
+    width: 100%;
 
 }
 .Header_Txt{
@@ -102,7 +108,21 @@
     height: auto;
     border-radius: 50%;
     align-self: center;
-
     grid-column: 2 / span 1;
     grid-row: 0 / span 3;
+}
+.h2{
+    font-size: 20px;
+}
+#projects{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+}
+ul::before{
+    background-image: url('src/assets/chevron-right-small.svg');
 }
