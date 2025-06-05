@@ -1,11 +1,12 @@
 import '../App.css'
 
+//import {useState} from "react";
+
 export default function Home() {
+    //const [open, setOpen] = useState(false);
 
     return(<>
             <div className="background">
-
-
             <header className = "PageTop">
                 <div className="Title">
                     <p>Will</p>
@@ -40,12 +41,26 @@ export default function Home() {
                 <div id="projects">
                     <h2>02. Projects</h2>
                     <div className= "project_grid">
-                        <ul>A-Level unity game </ul>
+                        <ul className= "project_list">
+
+
+                            <li>
+                                <button type="button" className="unity_button">A-Level Unity game</button>
+                                <div className="A-Level">
+
+                                </div>
+                            </li>
+                            <li>
+                                Weather Website
+                            </li>
+                            <li>
+                                This Website!
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
             </div>
-
 
         </>
     )
