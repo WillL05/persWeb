@@ -4,6 +4,7 @@ import {useState} from "react";
 
 export default function Home() {
     const [open, setOpen] = useState(false);
+    const [openT, setOpenT] = useState(false);
 
     return(<>
             <div className="background">
@@ -42,14 +43,17 @@ export default function Home() {
                     <h2>02. Projects</h2>
                     <div className= "project_grid">
                         <ul className= "project_list">
-                            <li>
+                            <li className={open ? "open" : ""}>
                                 <button type="button" className="unity_button" onClick={() => setOpen(!open)}> A-Level Unity game,</button>
                                 <div className={`collapsable ${open ? "open" : ""}`}>
-                                       <p>test </p>
+                                       <p>This project was for my A-Level project, in which we performed design, analysis, implementation and testing. This project helped me to understand software engineering cycles and the work around developing a piece of software, not just the programming.</p>
                                 </div>
                             </li>
-                            <li>
-                                Weather Website
+                            <li className={openT ? "open" : ""}>
+                                <button type="button" className="weather_button" onClick={() => setOpenT(!openT)}> Weather Website,</button>
+                                <div className={`collapsable ${openT ? "open" : ""}`}>
+                                    <p>This project was for my A-Level project, in which we performed design, analysis, implementation and testing. This project helped me to understand software engineering cycles and the work around developing a piece of software, not just the programming.</p>
+                                </div>
                             </li>
                             <li>
                                 This Website

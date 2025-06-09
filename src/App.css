@@ -125,24 +125,43 @@
     width: 100%;
     list-style-type: none;
 }
-li::before{
+.project_list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.unity_button, .weather_button {
+    border: none;
+    background-color: #0a192f;
+    color: white;
+    width: 50%;
+    text-align: left;
+    padding: 0.5em 1em 0.5em 2em;
+    position: relative;
+    cursor: pointer;
+}
+
+.unity_button::before,
+.weather_button::before {
     content: '';
     background-image: url('src/assets/chevron-right-small.svg');
     display: inline-block;
     width: 1em;
     height: 1em;
     background-size: contain;
-    margin-right: 0.2em;
+    position: absolute;
+    left: 0.8em;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
 }
-.project_list{
-    list-style-type: none;
+
+li.open .unity_button::before,
+li.open .weather_button::before {
+    transform: translateY(-50%) rotate(90deg);
 }
-.unity_button{
-    border: none;
-    background-color: #0a192f ;
-    color: white;
-}
-.active, .unity_button:hover{
+
+.active, .unity_button:hover, .active .weather_button:hover{
     background-color: #0a194f;
     color: white;
 }
@@ -151,11 +170,9 @@ li::before{
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-in-out;
-
-    background-color: #f1f1f1;
+    width: 100%;
+    background-color: #0a192f;
 }
-
 .collapsable.open {
-    max-height: 50px; /* increase to safely fit content */
-
+    max-height: 6em;
 }
