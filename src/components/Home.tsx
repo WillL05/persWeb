@@ -7,6 +7,7 @@ export default function Home() {
     const [openT, setOpenT] = useState(false);
 
     return(<>
+            <title>Will</title>
             <div className="background">
             <header className = "PageTop">
                 <div className="Title">
