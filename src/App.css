@@ -43,6 +43,12 @@
     margin-right: 20px;
     text-decoration:  none;
 }
+.btn4{
+    color: white;
+    border:  none;
+    margin-right: 20px;
+    text-decoration:  none;
+}
 .body{
     margin: 170px auto 0 auto;
     color: whitesmoke;
@@ -130,19 +136,18 @@
     padding: 0;
 }
 
-.unity_button, .weather_button {
+.coll_button {
     border: none;
     background-color: #0a192f;
     color: white;
-    width: 50%;
+    width: 100%;
     text-align: left;
     padding: 0.5em 1em 0.5em 2em;
     position: relative;
     cursor: pointer;
 }
 
-.unity_button::before,
-.weather_button::before {
+.coll_button::before{
     content: '';
     background-image: url('src/assets/chevron-right-small.svg');
     display: inline-block;
@@ -156,14 +161,14 @@
     transition: transform 0.3s ease;
 }
 
-li.open .unity_button::before,
-li.open .weather_button::before {
+li.open .coll_button::before{
     transform: translateY(-50%) rotate(90deg);
 }
 
-.active, .unity_button:hover, .active .weather_button:hover{
+.active, .coll_button:hover{
     background-color: #0a194f;
     color: white;
+    width: 50%
 }
 .collapsable {
     padding: 0 18px;
@@ -174,5 +179,5 @@ li.open .weather_button::before {
     background-color: #0a192f;
 }
 .collapsable.open {
-    max-height: 6em;
+    max-height: 15em;
 }

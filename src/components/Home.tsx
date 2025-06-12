@@ -5,6 +5,7 @@ import {useState} from "react";
 export default function Home() {
     const [open, setOpen] = useState(false);
     const [openT, setOpenT] = useState(false);
+    const [openThree, setOpenThree] = useState(false);
 
     return(<>
             <title>Will</title>
@@ -18,7 +19,8 @@ export default function Home() {
 
                     <a href={"#about"} className = "btn1" type={"button"}>0.1 About</a>
                     <a href={"#projects"} className = "btn2" type={"button"}>0.2 Projects</a>
-                    <a href={"#contact"} className = "btn3" type={"button"}>0.3 Contact</a>
+                    <a href={"#tutoring"} className = "btn3" type={"button"}>0.3 Tutoring</a>
+                    <a href={"#contact"} className = "btn4" type={"button"}>0.4 Contact</a>
                 </div>
             </header>
             <div className = "body">
@@ -33,9 +35,9 @@ export default function Home() {
                     <div className= "grid">
                         <div className="grid_left">
                             <p>Hi I'm Will, a student at the University of Leeds and studying Computer Science.</p>
-                            <p>I have always had an interest in studying something computer related since GCSE and studying at Uni has helped me to achieve this dream</p>
-                            <p>My passion is software engineering as I have always has an interest in programming. I have had the opportunity to participate in the <a href="https://luucompsoc.co.uk/">2025 LeedsHack</a>, working as a team of 4 to develop software over 24 hours</p>
-                            <p>I'm most confident working in Python, but I also have experience with C and C#</p>
+                            <p>I have always had an interest in studying something computer related since GCSE and studying at Uni has helped me to achieve this dream.</p>
+                            <p>My passion is software engineering as I have always has an interest in programming. I have had the opportunity to participate in the <a href="https://luucompsoc.co.uk/">2025 LeedsHack</a>, working as a team of 4 to develop software over 24 hours.</p>
+                            <p>I'm most confident working in Python, but I also have experience with C and C#.</p>
                         </div>
                         <img className = "image" src='src/assets/Will.webp' alt = "Will"/>
                     </div>
@@ -45,19 +47,22 @@ export default function Home() {
                     <div className= "project_grid">
                         <ul className= "project_list">
                             <li className={open ? "open" : ""}>
-                                <button type="button" className="unity_button" onClick={() => setOpen(!open)}> A-Level Unity game,</button>
+                                <button type="button" className="coll_button" onClick={() => setOpen(!open)}> A-Level Unity game,</button>
                                 <div className={`collapsable ${open ? "open" : ""}`}>
                                        <p>This project was for my A-Level project, in which we performed design, analysis, implementation and testing. This project helped me to understand software engineering cycles and the work around developing a piece of software, not just the programming.</p>
                                 </div>
                             </li>
                             <li className={openT ? "open" : ""}>
-                                <button type="button" className="weather_button" onClick={() => setOpenT(!openT)}> Weather Website,</button>
+                                <button type="button" className="coll_button" onClick={() => setOpenT(!openT)}> Weather Website,</button>
                                 <div className={`collapsable ${openT ? "open" : ""}`}>
-                                    <p>This project was for my A-Level project, in which we performed design, analysis, implementation and testing. This project helped me to understand software engineering cycles and the work around developing a piece of software, not just the programming.</p>
+                                    <p>This was a personal project I spent some time working on over the Christmas holidays. I used python to access data from the OpenWeatherMap API and combined this with a flask webpage, allowing the user to view current and future weather for a place of their choosing. This helped me to understand how APIs are utilised within python.</p>
                                 </div>
                             </li>
-                            <li>
-                                This Website
+                            <li className={openThree ? "open" : ""}>
+                                <button type="button" className="coll_button" onClick={() => setOpenThree(!openThree)}> This Website.</button>
+                                <div className={`collapsable ${openThree ? "open" : ""}`}>
+                                    <p>This website has been developed using React and Typescript and using Javascript for any animations.</p>
+                                </div>
                             </li>
 
                         </ul>
