@@ -68,6 +68,22 @@ export default function Home() {
                         </ul>
                     </div>
                 </div>
+                <div id="tutoring">
+                    <h2>03. Tutoring</h2>
+                    <div className= "Tutoring_Content">
+                        <p>over Summer 2025 I will be offering tutoring, in-person or online, for GCSE and A-Level Computer Science students. Group or individual</p>
+                        <p>Having only recently completed my A-Levels and GCSEs I have extensive knowledge of course material and know what it is like to study computer science at these levels.</p>
+                        <p>I am DBS checked and will be available in the Stanley and Outwood area for in-person sessions.</p>
+                        <p>if you have any Questions don't hesitate to <a href={"#contact"}>contact me.</a></p>
+                    </div>
+                </div>
+                <div id={"contact"}>
+                    <p>if you have any queries regarding anything do not hesitate to contact me across these platforms:</p>
+                    <ul>
+                        <li><a href={"https://www.linkedin.com/in/william-l-8355b32bb/"}>Linkedin</a> </li>
+                        <li><a href={""}>Facebook</a></li>
+                    </ul>
+                </div>
             </div>
             </div>
 

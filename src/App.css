@@ -181,3 +181,12 @@ li.open .coll_button::before{
 .collapsable.open {
     max-height: 15em;
 }
+#tutoring,#contact{
+    margin-top:  10vh;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+}
