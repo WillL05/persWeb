@@ -18,12 +18,21 @@
     margin-left: 20px ;
     font-weight: bold;
 }
-.button-Group{
-    border: none;
-    color:  white;
-    justify-content: flex-end;
-    margin-right: 20px;
-    text-decoration:  none;
+@media (max-width: 750px) {
+    .button-Group{
+        display: none;
+        border: none;
+        color:  white;
+        justify-content: flex-end;
+        margin-right: 20px;
+        text-decoration:  none;
+    }
+}
+
+@media (min-width: 750px) {
+    .Menu-Icon{
+    display: none;
+    }
 }
 .btn1{
     color: white;
@@ -189,4 +198,8 @@ li.open .coll_button::before{
     align-items: flex-start;
     justify-content: space-evenly;
     width: 100%;
+}
+.guidance{
+    font-size: 13px;
+    color: #1a196f;
 }

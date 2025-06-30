@@ -6,6 +6,7 @@ export default function Home() {
     const [open, setOpen] = useState(false);
     const [openT, setOpenT] = useState(false);
     const [openThree, setOpenThree] = useState(false);
+    const [clicked,setClicked] = useState(false);
 
     return(<>
             <title>Will</title>
@@ -22,9 +23,12 @@ export default function Home() {
                     <a href={"#tutoring"} className = "btn3" type={"button"}>0.3 Tutoring</a>
                     <a href={"#contact"} className = "btn4" type={"button"}>0.4 Contact</a>
                 </div>
+                <div className={"Menu-Icon"}>
+                    <input type="image" src="src/assets/menuIcon.svg" alt="menu" width="22" height="22" onClick={() => setClicked(clicked)}/>
+                </div>
             </header>
-            <div className = "body">
-                <div className="opening_text">
+                <div className="body">
+                    <div className="opening_text">
                     <p className="Header_Txt">Hi! I'm Will.</p>
                     <div className= "sub_text">
                         <p>I'm a computer science student at the University of Leeds with an interest in software engineering</p>
@@ -66,22 +70,25 @@ export default function Home() {
                             </li>
 
                         </ul>
+                        <p className={"guidance"}>click to expand</p>
                     </div>
                 </div>
                 <div id="tutoring">
                     <h2>03. Tutoring</h2>
                     <div className= "Tutoring_Content">
-                        <p>over Summer 2025 I will be offering tutoring, in-person or online, for GCSE and A-Level Computer Science students. Group or individual</p>
-                        <p>Having only recently completed my A-Levels and GCSEs I have extensive knowledge of course material and know what it is like to study computer science at these levels.</p>
-                        <p>I am DBS checked and will be available in the Stanley and Outwood area for in-person sessions.</p>
-                        <p>if you have any Questions don't hesitate to <a href={"#contact"}>contact me.</a></p>
+                        <p>Over Summer 2025 I will be offering tutoring online, for GCSE and A-Level Computer Science students. Group or individual</p>
+                        <p>Having only recently completed my A-Levels and GCSEs, at Outwood Grange Academy, I have extensive knowledge of course material and know what it is like to study computer science at these levels.</p>
+                        <p>I am fully DBS checked </p>
+                        <p>If you have any Questions don't hesitate to <a href={"#contact"}>contact me.</a></p>
                     </div>
                 </div>
                 <div id={"contact"}>
+                    <h2>04. Contact</h2>
                     <p>if you have any queries regarding anything do not hesitate to contact me across these platforms:</p>
                     <ul>
                         <li><a href={"https://www.linkedin.com/in/william-l-8355b32bb/"}>Linkedin</a> </li>
-                        <li><a href={""}>Facebook</a></li>
+                        <li><a href={"https://www.facebook.com/share/1GjfE99MHR/"}>Facebook</a></li>
+                        <li><a href={"mailto:williamlrd21@gmail.com"}>Email</a></li>
                     </ul>
                 </div>
             </div>
