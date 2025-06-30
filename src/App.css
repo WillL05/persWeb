@@ -31,23 +31,23 @@
 }
 .menu {
     opacity: 0;
-    visibility: hidden;
+    pointer-events: none;
     transition: opacity 0.5s ease-in-out;
-    position: absolute;
-
-}
-
-.menu.active {
-    color: #0a192f;
-    opacity: 1;
-    visibility: visible;
-    background-color: #64ffda;
     position: absolute;
     top: 50px;
     right: 0;
     width: 200px;
-    transition: opacity 0.5s ease-in-out;
+
 }
+
+.menu.active {
+    opacity: 1;
+    pointer-events: auto;
+    background-color: #64ffda;
+    color: #0a192f;
+    transition-delay: 0s;
+}
+
 
 @media (min-width: 750px) {
     .Menu-Icon{
