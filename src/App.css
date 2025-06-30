@@ -27,6 +27,13 @@
         margin-right: 20px;
         text-decoration:  none;
     }
+    .menu.active{
+        background-color: white;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 200px;
+    }
 }
 
 @media (min-width: 750px) {
@@ -158,7 +165,7 @@
 
 .coll_button::before{
     content: '';
-    background-image: url('src/assets/chevron-right-small.svg');
+    background-image: url('./assets/chevron-right-small.svg');
     display: inline-block;
     width: 1em;
     height: 1em;
@@ -174,11 +181,7 @@ li.open .coll_button::before{
     transform: translateY(-50%) rotate(90deg);
 }
 
-.active, .coll_button:hover{
-    background-color: #0a194f;
-    color: white;
-    width: 50%
-}
+
 .collapsable {
     padding: 0 18px;
     max-height: 0;

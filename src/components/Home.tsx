@@ -1,5 +1,6 @@
 import '../App.css'
-
+import menuIcon from '../assets/menuIcon.svg';
+import picture from '../assets/Will.webp'
 import {useState} from "react";
 
 export default function Home() {
@@ -24,7 +25,10 @@ export default function Home() {
                     <a href={"#contact"} className = "btn4" type={"button"}>0.4 Contact</a>
                 </div>
                 <div className={"Menu-Icon"}>
-                    <input type="image" src="src/assets/menuIcon.svg" alt="menu" width="22" height="22" onClick={() => setClicked(clicked)}/>
+                    <input type="image" src={menuIcon} alt="menu" width="22" height="22" onClick={() => setClicked(!clicked)}/>
+                    <div className={`menu ${clicked ? 'active' : ''}`}>
+
+                    </div>
                 </div>
             </header>
                 <div className="body">
@@ -43,7 +47,7 @@ export default function Home() {
                             <p>My passion is software engineering as I have always has an interest in programming. I have had the opportunity to participate in the <a href="https://luucompsoc.co.uk/">2025 LeedsHack</a>, working as a team of 4 to develop software over 24 hours.</p>
                             <p>I'm most confident working in Python, but I also have experience with C and C#.</p>
                         </div>
-                        <img className = "image" src='src/assets/Will.webp' alt = "Will"/>
+                        <img className = "image" src={picture} alt = "Will"/>
                     </div>
                 </div>
                 <div id="projects">
