@@ -27,7 +27,10 @@ export default function Home() {
                 <div className={"Menu-Icon"}>
                     <input type="image" src={menuIcon} alt="menu" width="22" height="22" onClick={() => setClicked(!clicked)}/>
                     <div className={`menu ${clicked ? 'active' : ''}`}>
-
+                        <a href={"#about"} className = "btn1" type={"button"}>0.1 About</a>
+                        <a href={"#projects"} className = "btn2" type={"button"}>0.2 Projects</a>
+                        <a href={"#tutoring"} className = "btn3" type={"button"}>0.3 Tutoring</a>
+                        <a href={"#contact"} className = "btn4" type={"button"}>0.4 Contact</a>
                     </div>
                 </div>
             </header>

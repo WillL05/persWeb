@@ -27,13 +27,26 @@
         margin-right: 20px;
         text-decoration:  none;
     }
-    .menu.active{
-        background-color: white;
-        position: absolute;
-        top: 50px;
-        right: 0;
-        width: 200px;
-    }
+
+}
+.menu {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+
+}
+
+.menu.active {
+    color: #0a192f;
+    opacity: 1;
+    visibility: visible;
+    background-color: #64ffda;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    transition: opacity 0.5s ease-in-out;
 }
 
 @media (min-width: 750px) {
