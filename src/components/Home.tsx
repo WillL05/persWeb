@@ -10,11 +10,7 @@ export default function Home() {
     const [clicked,setClicked] = useState(false);
 
     return(<>
-            <head>
-                <meta charSet="UTF-8"/>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-                <title>My Website</title>
-            </head>
+
             <title>Will</title>
             <div className="background">
                 <header className="PageTop">
@@ -110,10 +106,10 @@ export default function Home() {
                             <p>Over Summer 2025 I will be offering tutoring online, for GCSE and A-Level Computer
                                 Science students. Group or individual</p>
                             <p>Having only recently completed my A-Levels and GCSEs, at Outwood Grange Academy, I have
-                                extensive knowledge of course material and know what it is like to study computer
-                                science at these levels.</p>
+                                extensive knowledge of course material and know what it is like to study Computer
+                                Science at these levels.</p>
                             <p>I am fully DBS checked </p>
-                            <p>If you have any Questions don't hesitate to <a href={"#contact"}>contact me.</a></p>
+                            <p>If you have any questions don't hesitate to <a href={"#contact"}>contact me.</a></p>
                         </div>
                     </div>
                     <div id={"contact"}>

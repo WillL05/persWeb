@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 .background{
     background-color: #0a192f;
     min-height: 100vh;
-    font-family: 'Nunito', monospace;
+    font-family: 'Space Mono', monospace;
 }
 .PageTop{
     color: white;
-    font-family: 'Nunito', monospace;
+    font-family: 'Space Mono', monospace;
     height: 80px;
     font-size: 22px;
     padding: 1rem;
@@ -147,7 +149,8 @@
 }
 @media (max-width: 768px) {
     .body{
-        margin: 70px auto 0 auto;
+        margin: 30px auto 0 auto;
+
     }
     .opening_text{
         display: inline;
@@ -165,6 +168,7 @@
     }
     .grid{
         width: 100%;
+
     }
     .about{
         margin-top: 30vh;
