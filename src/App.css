@@ -8,9 +8,9 @@
 .PageTop{
     color: white;
     font-family: 'Space Mono', monospace;
-    height: 80px;
+    height: fit-content;
     font-size: 22px;
-    padding: 1rem;
+    padding: 0.6rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
